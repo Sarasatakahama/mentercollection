@@ -9,7 +9,7 @@
 html, body{
     width: 100%;
     height: 100%;
-    background: #FFFFFB; 
+    background: #FCFAF2; 
 }
 
 #header{
@@ -36,14 +36,16 @@ h1{
 */
 .animation1{
     position: relative;
-    width: 420px;
+    width: 31%;
     float: left;
+    margin-left: 1.8%;
     margin-bottom: 10px;
     overflow: hidden;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all 0.4s ease-in;
+    box-sizing: border-box;
     transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    
 }
 
 .animation1 .caption{
@@ -51,7 +53,7 @@ h1{
     background: rgba(46,167,224,0.4);
     height: 420px;
     width: 420px;
-    margin-left: 10px;
+    margin-left: px;
     padding-top: 210px;
     overflow: hidden;
     z-index: 1;
@@ -69,6 +71,7 @@ h1{
     color: white;
     font-size: 15px;
     text-align: center;
+    
 }
 
 .animation1 .caption h3{
@@ -84,6 +87,100 @@ h1{
 .animation1 img{
     float: left;
     width: 420px;
-    margin-left: 10px;
     position: relative;
+}
+
+.animation1 .caption:before,
+.animation1 .caption:after{
+    width: 1px;
+    height: 0;
+}
+
+.animation1 .caption:before{
+    right: 0;
+    top: 0;
+}
+
+.animation1 .caption:after{
+    left: 0;
+    bottom: 0;
+}
+
+.animation1 .caption h2,
+.animation1 .caption h3{
+    line-height: 1.5em;
+}
+
+.animation1 h2{
+    margin: 0 0 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.animation1 h3{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+.animation1:before,
+.animation1:after,
+.animation1 caption:before,
+.animation1 caption:after {
+  position: absolute;
+  content: '';
+  background-color: #212121;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0.5;
+}
+
+.animation1:before,
+.animation1:after {
+  height: 2px;
+  width: 0%;
+}
+.animation1:before {
+  top: 0;
+  left: 0;
+}
+.animation1:after {
+  bottom: 0;
+  right: 0;
+}
+.animation1:hover img,
+.animation1.hover img {
+  opacity: 0.8;
+
+}
+.animation1:hover caption,
+.animation1.hover caption {
+  opacity: 3;
+}
+.animation1:hover caption:before,
+.animation1.hover caption:before,
+.animation1:hover caption:after,
+.animation1.hover caption:after {
+  height: 100%;
+}
+.animation1:hover:before,
+.animation1.hover:before,
+.animation1:hover:after,
+.animation1.hover:after {
+  width: 100%;
+}
+.animation1:hover:before,
+.animation1.hover:before,
+.animation1:hover:after,
+.animation1.hover:after,
+.animation1:hover figcaption:before,
+.animation1.hover figcaption:before,
+.animation1:hover figcaption:after,
+.animation1.hover figcaption:after {
+  opacity: 1;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
 }
